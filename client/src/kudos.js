@@ -12,23 +12,11 @@ class Kudos extends React.Component {
     }
   }
 
-  componentDidMount() {
-    this.kudosList();
-  }
 
-  kudosList = () => {
-    axios.get('api/kudos')
-    .then(response => {
-      console.log({response});
-      this.setState({
-        kudos: response.data
-      })
-    })
-  }
   render() {
     return (
       <div>
-        {this.state.kudos.map(kudos => {
+        {this.props.kudos.map(kudos => {
           return (
             <MDBCard>
               <MDBCardBody className="card">

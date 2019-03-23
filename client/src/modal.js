@@ -17,11 +17,11 @@ class Modal extends React.Component {
   render() {
     return (
       <MDBContainer>
-        <MDBBtn onClick = {this.toggle}>Modal</MDBBtn>
+        <MDBBtn onClick = {this.toggle}>Add Kudos</MDBBtn>
         <MDBModal isOpen={this.state.modal} toggle={this.toggle}>
           <MDBModalHeader toggle={this.toggle}>Add Kudos!</MDBModalHeader>
           <MDBModalBody>
-            <Form/>
+            <Form toggle={this.toggle}/>
           </MDBModalBody>
           <MDBModalFooter>
       
