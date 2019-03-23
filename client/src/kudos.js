@@ -16,7 +16,7 @@ class Kudos extends React.Component {
     this.kudosList();
   }
 
-  kudosList() {
+  kudosList = () => {
     axios.get('api/kudos')
     .then(response => {
       console.log({response});

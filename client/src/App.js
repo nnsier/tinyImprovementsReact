@@ -9,10 +9,12 @@ class App extends Component {
   render() {
     return (
       <div>
-        <header>
-          <h1>Add Your Kudos!</h1>
-          <Modal/>
-        </header>
+        <MDBContainer fluid>
+          <header>
+            <p>Your Kudos!</p> 
+            <Modal/>
+          </header>
+        </MDBContainer>
         <MDBContainer>
           <MDBRow>
             <MDBCol>

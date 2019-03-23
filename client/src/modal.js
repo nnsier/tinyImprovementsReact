@@ -1,5 +1,7 @@
 import React from 'react';
 import { MDBContainer, MDBBtn, MDBModal, MDBModalBody, MDBModalHeader, MDBModalFooter } from 'mdbreact';
+import Form from './form';
+
 
 class Modal extends React.Component {
   state = {
@@ -19,11 +21,11 @@ class Modal extends React.Component {
         <MDBModal isOpen={this.state.modal} toggle={this.toggle}>
           <MDBModalHeader toggle={this.toggle}>Add Kudos!</MDBModalHeader>
           <MDBModalBody>
-
+            <Form/>
           </MDBModalBody>
           <MDBModalFooter>
-            <MDBBtn color="secondary" onClick={this.toggle}>Close</MDBBtn>
-            <MDBBtn color="primary">Submit</MDBBtn>
+      
+            
           </MDBModalFooter>
         </MDBModal>
       </MDBContainer>
