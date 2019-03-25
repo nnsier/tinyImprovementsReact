@@ -42,9 +42,11 @@ class Form extends React.Component {
       receiver: this.state.receiver
     }
     console.log(data);
+    this.props.toggle();
     axios.post('/api/kudos', data
     ).then(response => {
       console.log(response)
+      this.props.kudosList();
     })
   }
 

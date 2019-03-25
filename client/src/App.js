@@ -30,7 +30,7 @@ class App extends Component {
         <MDBContainer fluid>
           <header>
             <nav class="navbar fixed-top navbar-expand-lg navbar-dark default-color scrolling-navbar">
-              <Modal/>
+              <Modal kudosList={this.kudosList}/>
             </nav>
             
           </header>

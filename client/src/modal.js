@@ -21,7 +21,7 @@ class Modal extends React.Component {
         <MDBModal isOpen={this.state.modal} toggle={this.toggle}>
           <MDBModalHeader toggle={this.toggle}>Add Kudos!</MDBModalHeader>
           <MDBModalBody>
-            <Form toggle={this.toggle}/>
+            <Form toggle={this.toggle} kudosList={this.props.kudosList}/>
           </MDBModalBody>
           <MDBModalFooter>
       
